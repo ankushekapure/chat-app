@@ -1,0 +1,175 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    /* Centering content vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Background gradient */
+    background-image: linear-gradient(rgb(95, 102, 105), rgb(163, 247, 9));
+    background-size: cover;
+
+    /* Full viewport width and height */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Navigation styles */
+.nav {
+    padding: 1.5rem;
+    color: white;
+}
+
+/* Container styles */
+.container {
+    /* Making container flex */
+    display: flex;
+    flex-direction: column;
+    /* Container dimensions and appearance */
+    width: 50vw;
+    background: rgb(127, 255, 212);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+    height: 70vh;
+    box-shadow: 1px 1px 35px black;
+    /* Vertical scrollbar */
+    overflow-y: auto;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* Message input styles */
+.message {
+    /* Message box appearance */
+    background-color: antiquewhite;
+    width: auto;
+    padding: 0.6rem 0.5rem;
+    margin: 0.5rem 0.03rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+/* Welcome text styles */
+#welcome {
+    /* Centering text horizontally */
+    width: 100%;
+    text-align: center;
+    /* Text styling */
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* Left-aligned message styles */
+.left {
+    /* Align to the left */
+    align-self: flex-start;
+    /* Message box appearance */
+    text-align: center;
+    max-width: 80%;
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+
+/* Right-aligned message styles */
+.right {
+    /* Align to the right */
+    align-self: flex-end;
+    /* Message box appearance */
+    text-align: center;
+    max-width: 80%;
+    background-color: green;
+    color: white;
+}
+
+/* Center-aligned message styles */
+.center {
+    /* Align to the center */
+    align-self: center;
+    /* Message box appearance */
+    text-align: center;
+    background-color: rgb(77, 43, 0);
+    width: 100%;
+    font-style: italic;
+    color: white;
+}
+
+/* Send message container styles */
+#sendcontainer {
+    /* Making send container flex */
+    display: flex;
+    flex-direction: row;
+    /* Container dimensions and appearance */
+    width: 50vw;
+    margin: auto;
+    box-shadow: 1px 0px 35px black;
+    border-radius: 1rem;
+}
+
+/* Message input field styles */
+#messageinp {
+    /* Rounded bottom-left corner */
+    border-bottom-left-radius: 1rem;
+    /* Input field dimensions and appearance */
+    width: 45vw;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Send button styles */
+#sendbtn {
+    /* Rounded bottom-right corner */
+    border-bottom-right-radius: 1rem;
+    /* Button dimensions and appearance */
+    width: 5vw;
+    outline: none;
+    border: none;
+    background-color: rgb(250, 213, 1);
+    cursor: pointer;
+}
+
+/* Send button hover effect */
+#sendbtn:hover {
+    background-color: rgb(231, 235, 18);
+}
+
+/* Responsive For Mobile Devices */
+@media (max-width: 800px) {
+
+    /* CSS rules for screens with a maximum width of 800px */
+    .container {
+        /* Adjust container styles for smaller screens */
+        width: 96%;
+        height: 80%;
+    }
+
+    #sendcontainer {
+        /* Adjust container styles for smaller screens */
+        width: 96vw;
+        margin: auto;
+    }
+
+    #messageinp {
+        /* Adjust container styles for smaller screens */
+        width: 85vw;
+    }
+
+    /* Send button styles */
+    #sendbtn {
+        /* Adjust container styles for smaller screens */
+        width: 15vw;
+    }
+}
