@@ -22,19 +22,19 @@ I developed a real-time chat application using Node.js and Socket.IO, enabling u
 ## Getting Started
 To get started with this project, follow these steps:
 
-# Clone the repository to your local machine:
+### Clone the repository to your local machine:
 git clone https://github.com/ankushekapure/chat-app.git
 
-# Navigate to the project directory:
+### Navigate to the project directory:
 cd chat-app
 
-# Install the necessary dependencies:
+### Install the necessary dependencies:
 npm install
 
-# Navigate to nodeServer directory using terminal and Start the indexnode.js server:
+### Navigate to nodeServer directory using terminal and Start the indexnode.js server:
 node indexnode.js
 
-# Install live server extension in vscode and click on go live or Open your web browser and visit http://localhost:5500 to access the chat application.
+### Install live server extension in vscode and click on go live or Open your web browser and visit http://localhost:5500 to access the chat application.
 
 ## Usage
 - Sign in with your username to join the chat.
